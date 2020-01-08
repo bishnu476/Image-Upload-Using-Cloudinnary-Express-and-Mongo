@@ -1,0 +1,82 @@
+<!-- Filename: main.handlebars -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel='stylesheet'
+          type='text/css'/><!-- bootstrap css -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+    <link href="/css/style.css" rel='stylesheet' type='text/css'/><!-- custom css -->
+    <meta charset="utf-8">
+    <title>Example App</title>
+</head>
+<body>
+<div class="container">
+    {{{body}}}
+</div>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+
+</script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="/es2015/lightbox.js" defer></script>
+<script type="text/javascript">
+    $(function () {
+        $('#WS-LiSli').WS_lightbox_free({
+            'enable': ['close', 'arrows'],
+            buttons: {
+                size: 40,
+                style: 'square', // ( default, square, circle, rounded )
+                color: 'black',
+                color_icon: 'white',
+                border_width: 0,
+                border_color: '',
+                opacity: .5,
+                hover_opacity: 1
+            },
+            arrows: {
+                position: 'attached', // ( inside, outside, attached )
+                style: 'svelt', // (default, square, circle, rounded, svelt)
+                icon_style: 'angle', // (default, caret, angle, chevron)
+                icon_size: 20,
+                opacity: .5,
+                hover_effect: 'shrink', // (zoom, shrink, translate)
+                hover_opacity: .8
+            },
+            image: {
+                border_radius: 0,
+                border_color: '',
+                border_width: 0,
+                bg: 'none'
+            },
+            background: {
+                filter: 'image',
+                opacity: .5
+            },
+            display_velocity: 'low',
+            slide_velocity: 'fast'
+        });
+
+    });
+</script>
+
+</body>
+</html>
